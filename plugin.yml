@@ -1,26 +1,23 @@
+---
 name: BanItem
-author: Ghast
-version: 2.2
-api: [1.0.0, 2.0.0]
 main: Ghast\BanItem\Main
+version: 3.0.0
+api: 5.0.0
+author: Ghast
+description: Restricts selected items by their Axolotl-PM item state
 load: POSTWORLD
 commands:
   banitem:
-    description: "BanItem main command."
+    description: Bans or unbans an item, or lists banned items
     permission: banitem.command.banitem
-    usage: §f•§a>>§bGhi §e/banitem ban [ID Item]§b Để Ban Item. Ghi §e/banitem unban [ID Item]§b Để Un Ban Item. Ghi §e/banitem list§b Để Xem Danh Sách Item Đã Ban
+    usage: "/banitem <ban|unban|list> [item name or legacy ID[:meta]]"
 permissions:
   banitem:
     default: false
-    description: "Cấm Vật Phẩm Bạn Muốn Cấm"
-    children:
-      banitem.bypass:
-        default: false
-        description: "Cho Phép Sử Dụng Vật Phẩm Bị Cấm"
-      banitem.command:
-        default: false
-        description: "Cho Phép Sử Dụng Tất Cả Lệnh /banitem"
-        children:
-          banitem.command.banitem:
-            default: op
-            description: "Cho Phép Sử Dụng Lệnh /banitem"
+    description: Allows use of banned items
+  banitem.bypass:
+    default: false
+    description: Allows bypassing item bans
+  banitem.command.banitem:
+    default: op
+    description: Allows managing the banned item list

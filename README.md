@@ -1,7 +1,26 @@
 # BanItem
 
-BanItem is a legacy PocketMine-MP plugin snapshot for restricting items by numeric ID and metadata. Its manifest declares plugin API 1.0.0 and 2.0.0 and credits Ghast. The source uses APIs and numeric item IDs from those older server versions.
+BanItem blocks interactions, placement, melee damage, consumption and bow use for items in its stored ban list. Players with `banitem` or `banitem.bypass` can still use banned items.
 
-The tracked [items.bin](items.bin) is part of this historical snapshot. It has not been migrated or removed. The repository has no LICENSE file or documented grant to redistribute modified builds, so no Axolotl-PM 5 port, PHAR, CI workflow or stable release is provided.
+## Compatibility and verification
 
-See [plugin.yml](plugin.yml) and [the historical source](src/Ghast/BanItem/Main.php). A modern replacement needs a verified license, an item ID migration plan and tests that protect existing ban data.
+- Minimum Axolotl-PM API: `5.0.0`.
+- CI runs PHPStan at maximum level and builds against pinned API 5.0.0 and 5.49.1 source revisions.
+- CI smoke-tests the built PHAR on the official Axolotl-PM 5.49.1 server release. See the [workflow runs](https://github.com/NhanAZ-Plugins/BanItem/actions).
+- The checked source revisions do not prove compatibility with every API 5.x release or substitute for a connected-player gameplay test.
+
+## Commands
+
+- `/banitem ban <item>` adds an item. Use a name such as `minecraft:diamond_sword`; legacy numeric identifiers are accepted when the server's compatibility parser can resolve them.
+- `/banitem unban <item>` removes the matching item state.
+- `/banitem list` shows the stored identifiers.
+
+The plugin stores item names supplied by the operator and uses the parsed Axolotl-PM item state for event checks. Existing numeric identifiers and `ID:meta` entries are retained when loaded. Entries unsupported by the current server are kept in `items.bin` and reported in the server log instead of being silently discarded. Back up `plugin_data/BanItem/items.bin` before upgrading.
+
+## Attribution and license
+
+The historical manifest credits Ghast. This repository does not contain a license file; this update does not add or change a license.
+
+## Build
+
+The GitHub Actions workflow uses [DevTools](https://github.com/NhanAZ/DevTools) to run PHPStan, build the plugin PHAR and validate the artifact.
