@@ -5,8 +5,8 @@ BanItem blocks interactions, placement, melee damage, consumption and bow use fo
 ## Compatibility and verification
 
 - Minimum Axolotl-PM API: `5.0.0`.
-- CI runs PHPStan at maximum level and builds against pinned API 5.0.0 and 5.49.1 source revisions.
-- CI smoke-tests the built PHAR on the official Axolotl-PM 5.49.1 server release. See the [workflow runs](https://github.com/NhanAZ-Plugins/BanItem/actions).
+- CI runs PHPStan at maximum level and builds against pinned API 5.0.0 and 5.51.1 source revisions.
+- CI smoke-tests the built PHAR on the official Axolotl-PM 5.51.1 server release. See the [workflow runs](https://github.com/NhanAZ-Plugins/BanItem/actions).
 - The checked source revisions do not prove compatibility with every API 5.x release or substitute for a connected-player gameplay test.
 
 ## Commands
