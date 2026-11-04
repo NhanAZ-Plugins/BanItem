@@ -1,6 +1,14 @@
 # BanItem
 
-BanItem blocks interactions, placement, melee damage, consumption and bow use for items in its stored ban list. Players with `banitem` or `banitem.bypass` can still use banned items.
+Item ban plugin for Axolotl-PM API 5.
+
+[![CI](https://github.com/NhanAZ-Plugins/BanItem/actions/workflows/build.yml/badge.svg)](https://github.com/NhanAZ-Plugins/BanItem/actions/workflows/build.yml)
+[![Latest release](https://img.shields.io/github/v/release/NhanAZ-Plugins/BanItem)](https://github.com/NhanAZ-Plugins/BanItem/releases/latest)
+[![Discord](https://img.shields.io/discord/986553214889517088?label=Discord&logo=discord&logoColor=white&color=5865F2)](https://discord.gg/j2X83ujT6c)
+
+## Overview
+
+This plugin targets the PocketMine-MP and Axolotl-PM API 5 ecosystem and is maintained under [NhanAZ-Plugins](https://github.com/NhanAZ-Plugins).
 
 ## Compatibility and verification
 
