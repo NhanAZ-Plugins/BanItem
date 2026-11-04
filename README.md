@@ -24,8 +24,13 @@ The plugin stores item names supplied by the operator and uses the parsed Axolot
 
 ## Attribution and license
 
-The historical manifest credits Ghast. This repository does not contain a license file; this update does not add or change a license.
+The historical manifest credits NhanAZ. This repository does not contain a license file; this update does not add or change a license.
 
 ## Build
 
 The GitHub Actions workflow uses [DevTools](https://github.com/NhanAZ/DevTools) to run PHPStan, build the plugin PHAR and validate the artifact.
+
+
+## Credits
+
+Authors: NhanAZ.
