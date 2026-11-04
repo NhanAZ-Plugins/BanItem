@@ -3,7 +3,7 @@ name: BanItem
 main: Ghast\BanItem\Main
 version: 3.0.0
 api: 5.0.0
-author: Ghast
+author: NhanAZ
 description: Restricts selected items by their Axolotl-PM item state
 load: POSTWORLD
 commands:
