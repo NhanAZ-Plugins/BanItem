@@ -28,7 +28,7 @@ The historical manifest credits NhanAZ. This repository does not contain a licen
 
 ## Build
 
-The GitHub Actions workflow uses [DevTools](https://github.com/NhanAZ/DevTools) to run PHPStan, build the plugin PHAR and validate the artifact.
+The GitHub Actions workflow uses [DevTools](https://github.com/AxolotlBucketLabs/DevTools) to run PHPStan, build the plugin PHAR and validate the artifact.
 
 
 ## Credits
