@@ -43,7 +43,7 @@ jobs:
             ref: b16cc69974d4e805d21e6328ab77c0e17cd7116d
           - label: 5.51.1
             ref: e881fc1bc1c401545baf6bd1f824e41ff3f57bd1
-    uses: AxolotlBucketLabs/DevTools/.github/workflows/build-plugin.yml@v3
+    uses: AxolotlBucketLabs/DevTools/.github/workflows/build-plugin.yml@latest
     with:
       php-version: '8.4'
       pm-version-major: '5'
